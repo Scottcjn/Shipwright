@@ -147,7 +147,7 @@ git push origin <BRANCH NAME>
 
 ## Sharing the treasure
 
-Now that you have made your changes, you can share them with the world! You can do this by creating a pull request to your own fork. You can navigate around in the Github UI to find this, or you can use the following replacing the relevant info:
+Now that you have made your changes, you can share them with the world! You can do this by creating a pull request to your own fork. You can navigate around in the GitHub UI to find this, or you can use the following replacing the relevant info:
 ```
 https://github.com/<GITHUB USERNAME>/Shipwright/compare/develop...<BRANCH NAME>
 ```
