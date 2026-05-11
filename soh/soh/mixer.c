@@ -662,7 +662,7 @@ static void aMixImplSSE2(uint16_t count, int16_t gain, uint16_t in_addr, uint16_
             inxGainLoVec = _mm_unpacklo_epi16(inxGainLoVec, inxGainHiVec);
             inxGainHiVec = _mm_unpackhi_epi16(inxGainLoVec, inxGainHiVec);
 
-            // Now we have 4 32 bit elements.  Continue the calculaton per the reference implementation.
+            // Now we have 4 32 bit elements.  Continue the calculation per the reference implementation.
             // We already did out + 0x7fff and in * gain.
             // *out * 0x7fff + *in++ * gain is the final result of these two calculations.
             __m128i addLoVec = _mm_add_epi32(outx7fffLoVec, inxGainLoVec);
@@ -793,7 +793,7 @@ void aMixImpl256(uint16_t count, int16_t gain, uint16_t in_addr, uint16_t out_ad
         inxGainLoVec = _mm256_unpacklo_epi16(inxGainLoVec, inxGainHiVec);
         inxGainHiVec = _mm256_unpackhi_epi16(inxGainLoVec, inxGainHiVec);
 
-        // Now we have 8 32 bit elements.  Continue the calculaton per the reference implementation.
+        // Now we have 8 32 bit elements.  Continue the calculation per the reference implementation.
         // We already did out + 0x7fff and in * gain.
         // *out * 0x7fff + *in++ * gain is the final result of these two calculations.
         __m256i addLoVec = _mm256_add_epi32(outx7fffLoVec, inxGainLoVec);
