@@ -491,7 +491,7 @@ void DoorKiller_UpdateTexture(Actor* thisx, PlayState* play) {
 }
 
 /**
- * Gets the correct door texture, defines the appropriate draw fucntion and action function based on type behaviour
+ * Gets the correct door texture, defines the appropriate draw function and action function based on type behaviour
  * (door or rubble).
  */
 void DoorKiller_SetProperties(DoorKiller* this, PlayState* play) {

@@ -441,7 +441,7 @@ f32 Camera_GetFloorYLayer(Camera* camera, Vec3f* norm, Vec3f* pos, s32* bgId) {
         }
     }
     if (i == 0) {
-        osSyncPrintf(VT_COL(YELLOW, BLACK) "camera: foward check: too many layer!\n" VT_RST);
+        osSyncPrintf(VT_COL(YELLOW, BLACK) "camera: forward check: too many layer!\n" VT_RST);
     }
     return floorY;
 }

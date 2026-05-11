@@ -1326,7 +1326,7 @@ s32 OnePointCutscene_Attention(PlayState* play, Actor* actor) {
         case ACTORCAT_MISC:
         case ACTORCAT_BOSS:
         default:
-            osSyncPrintf(VT_COL(YELLOW, BLACK) "actor attention demo camera: %d: unkown part of actor %d\n" VT_RST,
+            osSyncPrintf(VT_COL(YELLOW, BLACK) "actor attention demo camera: %d: unknown part of actor %d\n" VT_RST,
                          play->state.frames, actor->category);
             timer = 30;
             break;
