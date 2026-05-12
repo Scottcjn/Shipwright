@@ -40,7 +40,7 @@ extern "C" void gSPSegment(void* value, int segNum, uintptr_t target) {
     // With HD textures, we need to pass the path to F3D, not the raw texture data.
     // Otherwise the needed metadata is not available for proper rendering...
     // This should *not* cause any crashes, but some testing may be needed...
-    // UPDATE: To maintain compatability it will still do the old behavior if the resource is a display list.
+    // UPDATE: To maintain compatibility it will still do the old behavior if the resource is a display list.
     // That should not affect HD textures.
     if (res) {
         uintptr_t desiredTarget = (uintptr_t)ResourceMgr_LoadIfDListByName(imgData);
